@@ -1,7 +1,10 @@
 # searchable-react-json-view
 
-This is a fork of [react-json-view](https://github.com/mac-s-g/react-json-view) with an extra search capability.  
-Please go there for the full readme.
+This is a fork of [searchable-react-json-view](https://www.npmjs.com/package/searchable-react-json-view).
+
+The only changes made to the original package are:
+- The addition of `react@^17` as an accepted peer dependency
+- Upgrading the lockfile from v1 to v3
 
 ### Install
 ```sh
@@ -17,7 +20,7 @@ Name|Type|Default|Description
 `highlightCurrentSearchColor`|`string`| <img src="https://user-images.githubusercontent.com/16322616/89119031-ac1c6d00-d4b3-11ea-9640-e5320904fdd3.png"/> | Current highlight color
 `customCopiedIcon`|`JSX.Element`| null | Custom icon that appears after copying
 `customCopyIcon`|`JSX.Element`| null | Custom icon for copy to clipboard
-`customActions`|`array`| [] | Custom actions that appear after copy, edit etc. each item should be: { icon: JSX.Element, onClick: clickedJsonValue => void } 
+`customActions`|`array`| [] | Custom actions that appear after copy, edit etc. each item should be: { icon: JSX.Element, onClick: clickedJsonValue => void }
 
 ### Example
 
@@ -34,4 +37,3 @@ Name|Type|Default|Description
     }]}
 />
 ```
-
